@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+}
+
+group 'me.vrekt'
+version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.crimson.Main'
+        )
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.nukkitx.com/maven-releases/'
+    }
+    maven {
+        url 'https://repo.nukkitx.com/maven-snapshots/'
+    }
+}
+
+dependencies {
+    implementation 'io.netty:netty-all:4.1.65.Final'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.29'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.10.0'
+    implementation "org.projectlombok:lombok:1.18.20"
+    annotationProcessor "org.projectlombok:lombok:1.18.20"
+    implementation "org.apache.logging.log4j:log4j-api:2.14.1"
+    implementation "org.apache.logging.log4j:log4j-core:2.14.1"
+    implementation group: 'org.fusesource.jansi', name: 'jansi', version: '1.17'
+    implementation project(":Network")
+    implementation project(":API")
+    implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+}
