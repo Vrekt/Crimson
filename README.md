@@ -22,10 +22,15 @@ Crimson is a work-in-progress server for Minecraft: Bedrock Edition.
 **What is currently implemented?**
     
     - Partial RakNet protocol
-        - Connection requests and replies
-        - Connection states and disconnections
+        - C→S: Open Connection Request 1
+        - S→C: Open Connection Reply 1
+        - C→S: Open Connection Request 2
+        - S→C: Open Connection Reply 2
+        - C→S: Connection Request
         - MOTD Pings.
     - An imcomplete basic API
         - BanLists
+        - Basic permission system
+        - Console input
         - server.properties
         - Fluent system for building MOTD pings.
