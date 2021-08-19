@@ -5,10 +5,11 @@ Crimson is a work-in-progress server for Minecraft: Bedrock Edition.
     
     - Cloudburst Networking components
         - https://github.com/CloudburstMC/Network
+        https://github.com/CloudburstMC/Network/tree/v2.0
     - Cloudburt Nukkit
         - https://github.com/CloudburstMC/Nukkit
     - The bedrock protocol on wiki.vg
-        - https://wiki.vg/Raknet_Protoco
+        - https://wiki.vg/Raknet_Protocol
         - https://wiki.vg/Bedrock_Protocol
 
 
