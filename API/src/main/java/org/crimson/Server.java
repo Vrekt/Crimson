@@ -32,4 +32,14 @@ public interface Server {
      */
     Network getNetwork();
 
+    /**
+     * @return the version
+     */
+    String getVersion();
+
+    /**
+     * Shutdown the server.
+     */
+    void shutdown();
+
 }

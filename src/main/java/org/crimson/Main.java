@@ -6,7 +6,7 @@ package org.crimson;
 public final class Main {
 
     public static void main(String[] args) {
-        Crimson.setServer(new CrimsonServer());
+        new CrimsonServer();
     }
 
 }
