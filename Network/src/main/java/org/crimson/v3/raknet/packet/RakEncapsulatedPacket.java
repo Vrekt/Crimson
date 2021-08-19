@@ -63,6 +63,11 @@ public final class RakEncapsulatedPacket extends AbstractReferenceCounted {
     }
 
     @Override
+    public RakEncapsulatedPacket retain() {
+        return ReferenceCountUtil.retain(this);
+    }
+
+    @Override
     protected void deallocate() {
         ReferenceCountUtil.release(contents);
     }

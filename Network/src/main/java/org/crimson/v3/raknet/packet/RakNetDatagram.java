@@ -35,8 +35,7 @@ public final class RakNetDatagram extends AbstractReferenceCounted {
                 final RakEncapsulatedPacket packet = new RakEncapsulatedPacket();
                 if (!packet.decode(content)) return false;
 
-                packet.retain();
-                packets.add(packet);
+                packets.add(packet.retain());
             }
         } catch (Exception any) {
             any.printStackTrace();
